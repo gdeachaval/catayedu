@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Regalos - Cata & Edu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1><span>Cata</span> & <span>Edu</span></h1>
+    <p>Te dejamos nuestra lista de regalos simbólica para que nos obsequies lo que desees. ¡Muchas gracias!</p>
+  </header>
+
+  <section class="gift-list">
+    <!-- Gift Item 1 -->
+    <div class="gift-item">
+      <img src="beach.jpeg" alt="Gift Image 1">
+      <h3>Excursión a la playa</h3>
+      <p>$4.000</p>
+      <button onclick="openModal('EXCURSION PLAYA')">Ver datos bancarios</button>
+    </div>
+
+    <!-- Gift Item 2 -->
+    <div class="gift-item">
+      <img src="dinner.jpg" alt="Gift Image 2">
+      <h3>Cena romántica</h3>
+      <p>$6.000</p>
+      <button onclick="openModal('ROMANTIC DINNER')">Ver datos bancarios</button>
+    </div>
+
+    <!-- Gift Item 3 -->
+    <div class="gift-item">
+      <img src="bike.jpg" alt="Gift Image 3">
+      <h3>Paseo en bicicleta</h3>
+      <p>$3.500</p>
+      <button onclick="openModal('BICICLETA')">Ver datos bancarios</button>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="bankModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Datos Bancarios</h2>
+      <p><strong>Banco Galicia</strong></p>
+      <p>CATA NOMBRE</p>
+      <p>CTA: XXXX-XXXX-XXXX</p>
+      <p>CBU: 0000000000000000000000</p>
+      <p>ALIAS: CATA.EDU.ALIAS</p>
+      <p>CUIL: XX-XXXXXXXX-X</p>
+      <hr>
+      <p><em id="motivo-text"></em></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

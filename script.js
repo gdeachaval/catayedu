@@ -16,3 +16,16 @@ window.onclick = function(event) {
     closeModal();
   }
 }
+
+function copyCBU() {
+  const cbuText = document.getElementById("cbu-text").textContent.replace("CBU: ", "");
+  navigator.clipboard.writeText(cbuText).then(() => {
+    const status = document.getElementById("copy-status");
+    status.textContent = "¡CBU copiado ✅!";
+    setTimeout(() => {
+      status.textContent = "";
+    }, 2000);
+  }).catch(err => {
+    alert("No se pudo copiar el CBU. Por favor copia manualmente.");
+  });
+}

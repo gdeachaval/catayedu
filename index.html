@@ -159,11 +159,17 @@
       <p><strong>Banco Galicia</strong></p>
       <p>CATA NOMBRE</p>
       <p>CTA: XXXX-XXXX-XXXX</p>
-      <p>CBU: 0000000000000000000000</p>
+
+      <div class="cbu-container">
+        <span id="cbu-text">CBU: 0000000000000000000000</span>
+        <button class="copy-btn" onclick="copyCBU()">📋 Copiar</button>
+      </div>
+
       <p>ALIAS: CATA.EDU.ALIAS</p>
       <p>CUIL: XX-XXXXXXXX-X</p>
       <hr>
       <p><em id="motivo-text"></em></p>
+      <p id="copy-status" class="copy-status"></p>
     </div>
   </div>
 
